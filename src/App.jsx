@@ -4,6 +4,8 @@ import {
   Switch, 
   Route } from 'react-router-dom';
 import LandingPage from './components/Landing/LandingPage';
+import Techstack from './components/Tech Stack/Techstack';
+import Projects from './components/Projects/Projects';
 
 export default function App() {
   return (
@@ -11,6 +13,12 @@ export default function App() {
       <Switch>
         <Route exact path = "/" >
           <LandingPage />
+        </Route>
+        <Route exact path = "/tech-stack" >
+          <Techstack />
+        </Route>
+        <Route exact path = "/projects" >
+          <Projects />
         </Route>
       </Switch>
     </Router>
