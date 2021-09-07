@@ -1,0 +1,34 @@
+.contactContainer{
+    position: relative;
+    padding-top: 54px;
+    width: 90vw;
+    margin:0 auto;
+    height: calc(100vh - 54px);
+    max-height: 800px;
+}
+
+.formContainer{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.reachOutText{
+    margin-bottom: 0;
+    color: #555;
+    font-weight: 500;
+}
+.hidden{
+    opacity: 0;
+}
+.visible{
+    color:#555;
+    font-weight: 500;
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+}
+@media screen and (max-width: 600px) {
+    .reachOutText{
+        display: none;
+    }
+}
