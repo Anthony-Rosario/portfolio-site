@@ -1,0 +1,4 @@
+[build]
+base = "web_service/"
+publish = "/build"
+command = "npm run build"
