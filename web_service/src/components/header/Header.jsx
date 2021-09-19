@@ -79,7 +79,7 @@ const Header = ({handlePortfolioScroll, handleAboutScroll, handleContactScroll})
                   <MenuItem>
                     <Link
                       className={classes.contactLink} 
-                      href='../../assets/Anthony-Rosario_Resume.pdf' 
+                      href='../../assets/Anthony-Rosario.pdf' 
                       target="_blank"
                       rel="noopener"
                     >
