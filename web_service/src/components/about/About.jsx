@@ -9,20 +9,13 @@ const About = forwardRef((props, ref) => {
         <div className='innerContainer'>
           <div className='aboutContent'>
             <p>  
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
-            Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
-            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            
             </p>
             <p>  
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
-            Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum 
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
-            Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
-            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            Striving to build a more intuitive and accessible world of technology through collaboration and innovation. 
             </p>
             <p>  
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
-            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            Coming from a background in logistics and distribution has strengthened my ability to communicate effectively in a team based environment and meet essential deadlines.
             </p>
           </div>
           <div className='imageContainer'>
@@ -31,6 +24,18 @@ const About = forwardRef((props, ref) => {
               <Transformation width='700' quality='90' crop="scale"/>
             </Image>
           </div>
+          {/* <section>Tech Stack 
+            <ul className="tech-stack" >Languages: 
+              <li><img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="javascript"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" /></li>
+              <li><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS"/></li>
+            </ul>
+            <ul className="tech-stack" >Frameworks: 
+              <li><img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="javascript"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" /></li>
+              <li><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS"/></li>
+            </ul>
+          </section> */}
         </div>
       </section>
     )

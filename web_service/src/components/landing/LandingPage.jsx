@@ -23,15 +23,14 @@ export default function LandingPage() {
         handleAboutScroll={handleAboutScroll}
         handleContactScroll={handleContactScroll}
       />
-       <section
+      <section
         className='landingContainer' >
         <div className='centerContent'>
           <img className='landing-img' src='https://placekitten.com/200/300' alt="kitten" />
           <h3 className='greeting'>Hello! My Name is</h3>
           <h1 className='name'>Anthony Rosario.</h1>
           <h3 className='statement'>
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
-            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            I am a Software Engineer based in the Bay Area, California.  
           </h3>
         </div>
         <div className='chevronDiv'>

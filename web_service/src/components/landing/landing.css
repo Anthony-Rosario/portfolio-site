@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 .landingContainer{
   display:flex;
   flex-direction: column;
@@ -9,44 +11,49 @@
   height: 100vh;
   width: 85vw;
   margin:0 auto;
-  color:#555
+  color:#555;
 }
 
 .landing-img {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  
-
+  width: 13vw;
+  max-width: 320px;
+  border-radius: 4.5px;
 }
+
 .greeting{
   font-size: clamp(1.8em,4vw,2.5rem);
-  color:rgba(0, 0, 0, 0.493);
+  color:#001219a1;
   margin:0rem;
 }
+
 .name{
   font-size: clamp(2.4rem,8vw, 5rem);
   text-align: left;
-  color:#1F4477;
+  color:#86d3b9;
   line-height: 90%;
   margin:0.5rem 0rem 1rem 0rem;
 }
+
 .statement{
-  color:rgba(0, 0, 0, 0.664);
+  color: #001219a1;
   margin:0;
   font-size: clamp(1.6rem,4vw,2.5rem);
   line-height: clamp(1.8rem,150%, 3.4rem);
   padding-bottom: 3rem;
-  /* line-height: clamp(1.8rem,3.5vh, 4rem); */
 }
+
 .chevronDiv{
   cursor: pointer;
   position: absolute;
   bottom:0;
 }
+
 .iconFlex{
   display: flex;
 }
+
 .icon{
   font-size: 1.8em;
   margin-right: 0.4em;

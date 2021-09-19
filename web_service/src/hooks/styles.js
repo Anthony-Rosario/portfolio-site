@@ -10,18 +10,18 @@ export const useHeaderStyles = makeStyles(theme =>({
             justifyContent: 'center',
           },
         boxShadow: 'none',
-        backgroundColor: '#e6e5dd',
+        backgroundColor: '#94d2bd',
         '& .MuiButton-root':{
-          color:'#555',
+          color:'#323232d0',
           fontWeight:'500',
         }
     },
     paper:{
       borderRadius: 5,
-      backgroundColor: '#e6e5dd',
+      backgroundColor: '#94d2bd',
     },
     contactLink:{
-      color:'#555',
+      color:'#323232d0',
     },
   })); 
 
