@@ -25,7 +25,6 @@ const ContactForm = forwardRef((props,ref) => {
       <div className='contactContainer' ref={ref}>
         <h1 className='sectionHeader'>Contact</h1>
         <div className='formContainer'>
-        <p className='reachOutText'>Please feel free to reach out!</p>
         <form 
           onSubmit={handleSubmit}
           className={classes.root}
@@ -58,11 +57,12 @@ const ContactForm = forwardRef((props,ref) => {
             disabled={submitted}
             type='submit'
             variant='outlined'
+            className='submit-btn'
             >
             Submit
           </Button>
         </form>
-        <h4 className={submitted ? 'visible':'hidden'}>Thank you! I'll get back to you soon.</h4>
+        <h4 className={submitted ? 'visible':'hidden'}>Thank you for contacting me! I will get back to you as soon as possible.</h4>
       </div>
       </div>
     )

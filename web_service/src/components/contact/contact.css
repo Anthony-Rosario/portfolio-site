@@ -13,20 +13,28 @@
     align-items: center;
     flex-direction: column;
 }
+
 .reachOutText{
     margin-bottom: 0;
     color: #555;
     font-weight: 500;
 }
+
 .hidden{
     opacity: 0;
 }
+
 .visible{
     color:#555;
     font-weight: 500;
     opacity: 1;
     transition: opacity 200ms ease-in-out;
 }
+
+.submit-btn:hover {
+    background-color:#ff00ff;
+}
+
 @media screen and (max-width: 600px) {
     .reachOutText{
         display: none;

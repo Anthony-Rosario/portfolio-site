@@ -3,7 +3,7 @@ import About from '../about/About';
 import Header from '../header/Header';
 import './landing.css'
 import Projects from '../projects/Projects';
-// import ContactForm from '../contact/ContactForm';
+import ContactForm from '../contact/ContactForm';
 import { useScroll } from '../../hooks/useScroll';
 import { BsArrowDownShort } from 'react-icons/bs'
 
@@ -14,7 +14,7 @@ export default function LandingPage() {
     handleContactScroll,
     portfolioRef,
     aboutRef,
-    // contactRef
+    contactRef
   } = useScroll();
   return (
     <main>
@@ -42,7 +42,7 @@ export default function LandingPage() {
       </section>
       <About ref={aboutRef}/>
       <Projects ref={portfolioRef}/>
-      {/* <ContactForm ref={contactRef}/> */}
+      <ContactForm ref={contactRef}/>
     </main>
   )
 }
