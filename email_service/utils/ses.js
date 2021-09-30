@@ -32,7 +32,11 @@ const sendEmail = (email, subject, message) => {
     region:process.env.AWS_SES_REGION,
     };
 
-    const response =  new SES(SESConfig).sendEmail(params).promise();
+    const response =  new SES(SESConfig).sendEmail(params).promise().then((res) => {
+      console.log(res);
+    }).catch(error => {
+        console.log(error)
+    });;
     
     return response;
 };
