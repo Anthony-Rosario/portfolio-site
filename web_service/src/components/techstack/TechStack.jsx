@@ -51,6 +51,7 @@ const closeTestingPopover = () => {
 
   return (
     <>
+      <h1 className='sectionHeader'>Tech Stack</h1>
       <Box ref={ref} sx={{ width: 'auto', ml: '33vw', mr: '20vw' }}>
         <Grid container rowSpacing={{ xs: 2, md: 3 }} columnSpacing={{ xs: 1, sm: 2, md: 3 }} >
           <Grid item xs={6}>

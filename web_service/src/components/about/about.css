@@ -30,6 +30,7 @@ li{
   width: 80vw;
   max-width: 320px;
   border-radius: 8px;
+  margin-left: auto;
 }
 
 .aboutContent > p {
