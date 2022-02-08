@@ -1,26 +1,32 @@
 import React from 'react';
-import About from '../about/About';
-import Header from '../header/Header';
-import './landing.css'
-import Projects from '../projects/Projects';
-import ContactForm from '../contact/ContactForm';
 import { useScroll } from '../../hooks/useScroll';
 import { BsArrowDownShort } from 'react-icons/bs'
+import About from '../about/About';
+import Header from '../header/Header';
+import Projects from '../projects/Projects';
+import Tech from '../techstack/TechStack';
+import ContactForm from '../contact/ContactForm';
+import Particle from './Particles';
+import './landing.css'
 
 export default function LandingPage() {
   const {
     handlePortfolioScroll,
     handleAboutScroll,
+    handleTechScroll,
     handleContactScroll,
     portfolioRef,
     aboutRef,
+    techRef,
     contactRef
   } = useScroll();
   return (
     <main>
+      <Particle />
       <Header 
         handlePortfolioScroll={handlePortfolioScroll}
         handleAboutScroll={handleAboutScroll}
+        handleTechScroll={handleTechScroll}
         handleContactScroll={handleContactScroll}
       />
       <section
@@ -42,6 +48,7 @@ export default function LandingPage() {
       </section>
       <About ref={aboutRef}/>
       <Projects ref={portfolioRef}/>
+      <Tech ref={techRef}/>
       <ContactForm ref={contactRef}/>
     </main>
   )

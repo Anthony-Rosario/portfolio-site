@@ -9,6 +9,7 @@
   height: calc(100vh - 54px);
   width: 85vw;
   margin:0 auto;
+  backdrop-filter: blur(1px)
 }
 
 ul {

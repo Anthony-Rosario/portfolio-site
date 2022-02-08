@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import {Image, Transformation } from 'cloudinary-react';
+
 import './about.css';
 
 const About = forwardRef((props, ref) => {
@@ -24,18 +25,6 @@ const About = forwardRef((props, ref) => {
               <Transformation width='700' quality='90' crop="scale"/>
             </Image>
           </div>
-          {/* <section>Tech Stack 
-            <ul className="tech-stack" >Languages: 
-              <li><img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="javascript"/></li>
-              <li><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" /></li>
-              <li><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS"/></li>
-            </ul>
-            <ul className="tech-stack" >Frameworks: 
-              <li><img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="javascript"/></li>
-              <li><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" /></li>
-              <li><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS"/></li>
-            </ul>
-          </section> */}
         </div>
       </section>
     )

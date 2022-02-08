@@ -10,9 +10,9 @@ export const useHeaderStyles = makeStyles(theme =>({
             justifyContent: 'center',
           },
         boxShadow: 'none',
-        backgroundColor: '#94d2bd',
+        backgroundColor: '#353535',
         '& .MuiButton-root':{
-          color:'#323232d0',
+          color:'#94d2bd',
           fontWeight:'500',
         }
     },

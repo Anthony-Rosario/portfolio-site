@@ -11,7 +11,7 @@ import MenuList from '@material-ui/core/MenuList';
 import Link from '@material-ui/core/Link';
 import { useHeaderStyles } from '../../hooks/styles';
 
-const Header = ({handlePortfolioScroll, handleAboutScroll, handleContactScroll}) => {
+const Header = ({handlePortfolioScroll, handleAboutScroll,handleTechScroll, handleContactScroll}) => {
   const classes = useHeaderStyles();
   const [open, setOpen] = useState(false);
 
@@ -25,11 +25,11 @@ const Header = ({handlePortfolioScroll, handleAboutScroll, handleContactScroll})
   }
     
   return(
-   
     <AppBar className={classes.bar} position='fixed'>
       <Toolbar className={classes.bar}>
         <Button onClick={()=>handleAboutScroll()}>About</Button>
         <Button onClick={()=>handlePortfolioScroll()}>Projects</Button>
+        <Button onClick={()=>handleTechScroll()}>Tech Stack</Button>
         <Button onClick={()=>handleContactScroll()}>Contact</Button>
         <Button
           ref={anchorRef}
@@ -49,7 +49,7 @@ const Header = ({handlePortfolioScroll, handleAboutScroll, handleContactScroll})
           {({ TransitionProps, placement }) => (
           <Grow
             {...TransitionProps}
-            style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+            style={{ transformOrigin: placement === 'bottom' ? 'center left' : 'center right' }}
           >
             <Paper 
               elevation={0}
@@ -79,7 +79,7 @@ const Header = ({handlePortfolioScroll, handleAboutScroll, handleContactScroll})
                   <MenuItem>
                     <Link
                       className={classes.contactLink} 
-                      href='../../assets/Anthony-Rosario.pdf' 
+                      href='../../assets/Anthony rosario - Software Developer.pdf' 
                       target="_blank"
                       rel="noopener"
                     >

@@ -5,6 +5,7 @@ export const useScroll=()=>{
   smoothscroll.polyfill();
   const portfolioRef = useRef(null);
   const aboutRef = useRef(null);
+  const techRef = useRef(null);
   const contactRef = useRef(null);
 
   const handlePortfolioScroll = () =>{
@@ -17,6 +18,11 @@ export const useScroll=()=>{
       behavior:'smooth'
     })
   }
+  const handleTechScroll = () => {
+    techRef.current.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
   const handleContactScroll = () =>{
     contactRef.current.scrollIntoView({
       behavior:'smooth'
@@ -26,9 +32,11 @@ export const useScroll=()=>{
   return {
     handlePortfolioScroll,
     handleAboutScroll,
+    handleTechScroll,
     handleContactScroll,
     portfolioRef,
     aboutRef,
+    techRef,
     contactRef
   }
 };

@@ -1,71 +1,118 @@
-import React, {useState, forwardRef} from 'react';
+import React, { useState, forwardRef } from 'react';
 import './contact.css';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { sendContact } from '../../services/sendContact';
 import { useContactStyles } from '../../hooks/styles';
 
-const ContactForm = forwardRef((props,ref) => {
+const FORM_ENDPOINT = 'https://public.herotofu.com/v1/60a19ce0-8878-11ec-9849-fb4467695b96';
+
+const ContactForm = forwardRef((props, ref) => {
   const classes = useContactStyles();
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit= async(e) =>{
-    e.preventDefault();
-    setSubmitted(prev=>!prev);
-    await sendContact(email, subject, message);
-    setEmail('');
-    setSubject('');
-    setMessage('');
-    
-  }
-  return(
-      <div className='contactContainer' ref={ref}>
-        <h1 className='sectionHeader'>Contact</h1>
-        <div className='formContainer'>
-        <form 
+  const handleSubmit = () => {
+    setTimeout(() => {
+      setSubmitted(true);
+    }, 100);
+  };
+  return (
+    <div className="contactContainer" ref={ref}>
+      <h1 className="sectionHeader">Contact</h1>
+      <div className="formContainer">
+        <p className="reachOutText">Please feel free to reach out!</p>
+        <form
+          action={FORM_ENDPOINT}
+          method="POST"
+          target="_blank"
           onSubmit={handleSubmit}
           className={classes.root}
-          >
+        >
           <TextField
             required
-            margin='normal'
-            label='Email'
-            variant='outlined'
-            onChange={({target})=>setEmail(target.value)}
-            value={email}  
-            />
-          <TextField
-            required
-            label='subject'
-            variant='outlined'
-            onChange={({target})=>setSubject(target.value)}
-            value={subject}
+            margin="normal"
+            type='email'
+            name='email'
+            label="email"
+            variant="outlined"
+          />
+          <TextField 
+            required 
+            name="subject" 
+            label="subject" 
+            variant="outlined" 
+            type='subject' 
             />
           <TextField
             required
             multiline
             rows={8}
-            label='message'
-            variant='outlined'
-            onChange={({target})=>setMessage(target.value)}
-            value={message}
-            />
-          <Button
-            disabled={submitted}
-            type='submit'
-            variant='outlined'
-            className='submit-btn'
-            >
+            label="message"
+            type='message'
+            name='message'
+            variant="outlined"
+          />
+          <Button disabled={submitted} type="submit" variant="outlined">
             Submit
           </Button>
         </form>
-        <h4 className={submitted ? 'visible':'hidden'}>Thank you for contacting me! I will get back to you as soon as possible.</h4>
+        <h4 className={submitted ? 'visible' : 'hidden'}>
+          Thank you! I'll get back to you soon.
+        </h4>
       </div>
-      </div>
-    )
+    </div>
+  );
 });
 
 export default ContactForm;
+
+// import React, { useState } from 'react'
+
+// const FORM_ENDPOINT = "https://public.herotofu.com/v1/60a19ce0-8878-11ec-9849-fb4467695b96"
+
+// const ContactForm = () => {
+//   const [submitted, setSubmitted] = useState(false);
+
+//   const handleSubmit = () => {
+//     setTimeout(() => {
+//       setSubmitted(true);
+//     }, 100);
+//   };
+
+//   if (submitted) {
+//     return (
+//       <>
+//         <h1>Thank You For Reaching Out!</h1>
+//         <p>We'll be in touch soon.</p>
+//       </>
+//     );
+//   }
+
+//   return (
+//     <form
+//       action={FORM_ENDPOINT}
+//       onSubmit={handleSubmit}
+//       method='POST'
+//       target='_blank'
+//     >
+//       <section>
+//         <input type='text' placeholder='Your Name' name='name' required />
+//       </section>
+
+//       <section>
+//         <input type='email' placeholder='Email' name='email' required />
+//       </section>
+
+//       <section>
+//         <textarea placeholder='Your Message' name='message' required/>
+//       </section>
+
+//       <section>
+//         <button type='submit'> Send A Message </button>
+//       </section>
+
+//     </form>
+//   )
+
+// };
+
+// export default ContactForm;

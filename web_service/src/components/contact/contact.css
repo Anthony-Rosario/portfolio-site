@@ -25,14 +25,14 @@
 }
 
 .visible{
-    color:#555;
+    color:rgb(214, 12, 250);
     font-weight: 500;
     opacity: 1;
     transition: opacity 200ms ease-in-out;
 }
 
 .submit-btn:hover {
-    background-color:#ff00ff;
+    background-color:#7bff00;
 }
 
 @media screen and (max-width: 600px) {

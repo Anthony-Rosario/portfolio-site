@@ -8,7 +8,7 @@ const projects = [
     description: 'Anyone can make beautiful noise with Socket Jockey. This audiovisual app uses physics and colliding objects to generate musical soundscapes. One or more users may enter rooms where they can collaborate by adding sonically charged objects to a collective space.',
 },
 {
-    image: './assets/QuackChain.png',
+    image: './assets/QuackChain_bigger.png',
     name: 'QuackChain',
     github: 'https://github.com/Alchemy-Crypto',
     tech: ['Solidity, Node, Express, Truffle, Slack API/Slack Bolt framework'],
