@@ -1,4 +1,4 @@
-const projects = [
+const project = [
 {
     image: './assets/SocketJockey.png',
     name: 'SocketJockey',
@@ -31,4 +31,4 @@ const projects = [
     description: 'During a week long sprint with a team of 4 engineers, we managed to develope a fun geo guessing game utilizing the Google Maps API. During a week long sprint with a team of 4 engineers, we managed to develope a fun geo guessing game utilizing the Google Maps API. ',
 }
 ]
-export default projects;
+export default project;

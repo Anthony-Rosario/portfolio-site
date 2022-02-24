@@ -9,7 +9,6 @@
   height: calc(100vh - 54px);
   width: 85vw;
   margin:0 auto;
-  backdrop-filter: blur(1px)
 }
 
 ul {
@@ -27,8 +26,8 @@ li{
 }
 
 .myselfImage{
-  width: 80vw;
-  max-width: 320px;
+  width: 15vw;
+  max-width: auto;
   border-radius: 8px;
   margin-left: auto;
 }
@@ -53,7 +52,7 @@ li{
     height: auto;
   }
   .myselfImage{
-    width: 70vw;
+    width: 40vw;
     display: block;
     margin:0 auto;
   }

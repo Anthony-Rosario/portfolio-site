@@ -5,7 +5,7 @@ import ProjectItem from './ProjectItem';
 
 const ProjectList = () =>(
   <section className='projectList'>
-       {projects.map((proj)=>
+      {projects.map((proj)=>
         <ProjectItem project={proj} key={proj.name}/>
       )}
   </section>

@@ -1,26 +1,40 @@
+.sectionHeader{
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
+  color:#86d3b9;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .projectContainer{
   padding-top: 54px;
   position: relative;
   width: 85vw;
   margin:0 auto;
 }
+
 .projectList{
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .techList{
   color: #57bdca
 }
+
 .nameAndLinks{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .iconLink{
   color:rgb(60, 60, 60);
 }
+
 .iconLink:hover{
   color:rgb(118, 118, 118);
 }
@@ -32,5 +46,12 @@
   .projectList{   
     margin:0 auto;
     width: 90vw;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .sectionHeader{
+    text-align:center;
+    margin-bottom:0;
   }
 }

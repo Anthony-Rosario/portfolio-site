@@ -16,8 +16,8 @@ const ContactForm = forwardRef((props, ref) => {
     }, 100);
   };
   return (
-    <div className="contactContainer" ref={ref}>
-      <h1 className="sectionHeader">Contact</h1>
+    <section className="contactContainer" ref={ref}>
+      <h1 className="section-Header">Contact</h1>
       <div className="formContainer">
         <p className="reachOutText">Please feel free to reach out!</p>
         <form
@@ -59,60 +59,8 @@ const ContactForm = forwardRef((props, ref) => {
           Thank you! I'll get back to you soon.
         </h4>
       </div>
-    </div>
+    </section>
   );
 });
 
 export default ContactForm;
-
-// import React, { useState } from 'react'
-
-// const FORM_ENDPOINT = "https://public.herotofu.com/v1/60a19ce0-8878-11ec-9849-fb4467695b96"
-
-// const ContactForm = () => {
-//   const [submitted, setSubmitted] = useState(false);
-
-//   const handleSubmit = () => {
-//     setTimeout(() => {
-//       setSubmitted(true);
-//     }, 100);
-//   };
-
-//   if (submitted) {
-//     return (
-//       <>
-//         <h1>Thank You For Reaching Out!</h1>
-//         <p>We'll be in touch soon.</p>
-//       </>
-//     );
-//   }
-
-//   return (
-//     <form
-//       action={FORM_ENDPOINT}
-//       onSubmit={handleSubmit}
-//       method='POST'
-//       target='_blank'
-//     >
-//       <section>
-//         <input type='text' placeholder='Your Name' name='name' required />
-//       </section>
-
-//       <section>
-//         <input type='email' placeholder='Email' name='email' required />
-//       </section>
-
-//       <section>
-//         <textarea placeholder='Your Message' name='message' required/>
-//       </section>
-
-//       <section>
-//         <button type='submit'> Send A Message </button>
-//       </section>
-
-//     </form>
-//   )
-
-// };
-
-// export default ContactForm;

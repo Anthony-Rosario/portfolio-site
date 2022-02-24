@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
   z-index: 0;
 }
@@ -8,11 +9,10 @@
   display:flex;
   flex-direction: column;
   justify-content: center;
-  gap:3rem;
   align-items:center;
   height: 100vh;
   width: 85vw;
-  margin:0 auto;
+  margin: auto;
   color:#555;
 }
 
@@ -61,3 +61,29 @@
   margin-right: 0.4em;
 }
 
+@media screen and (max-width:768px){
+  .landingContainer, .name{
+    text-align: center;
+  }
+
+  .landing-img{
+    width: 40vw;
+    display: block;
+    margin:0 auto;
+  }
+
+  .aboutContent{
+    height: auto;
+  }
+
+  .centerContent{
+    clear:both;
+    min-width: 220px;
+    margin: auto;
+  }
+
+  .aboutContent{
+    margin:0 auto;
+    max-width: 90vw;
+  }
+}
