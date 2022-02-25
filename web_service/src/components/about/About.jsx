@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
 import {Image, Transformation } from 'cloudinary-react';
-
 import './about.css';
 
 const About = forwardRef((props, ref) => {

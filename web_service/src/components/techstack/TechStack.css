@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+
 .tech-stack-container {
   padding-top: 54px;
   position: relative;
   width: 85vw;
   margin: 0 auto;
-  padding-top: 100px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 54px);
 }
 
 .techstack-header{
@@ -21,8 +23,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto) repeat(1fr, auto);
-  grid-gap: 10px;
-  height: calc(100vh - 10px);
+}
+
+.tech-border{
+  border: outset 1px rgba(36, 185, 160, 0.555);
+  border-radius: 5px 5px 5px 5px;
+  background-color: #86d3b971;
 }
 
 .testing-grid{
@@ -31,8 +37,21 @@
   margin: auto;
 }
 
-.languages-grid, .libraries-grid, .devtools-grid, .database-grid{
+.languages-grid, .libraries-grid, .devtools-grid, .database-grid, .testing-grid{
   margin: auto;
+  font-family: 'Space Grotesk';
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cont{
+  text-decoration: underline;
+  margin-left: 1em;
 }
 
 
