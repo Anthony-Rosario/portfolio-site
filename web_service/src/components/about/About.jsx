@@ -9,13 +9,13 @@ const About = forwardRef((props, ref) => {
         <div className='innerContainer'>
           <div className='aboutContent'>
             <p>  
-            
-            </p>
-            <p>  
             Striving to build a more intuitive and accessible world of technology through collaboration and innovation. 
             </p>
             <p>  
             Coming from a background in logistics and distribution has strengthened my ability to communicate effectively in a team based environment and meet essential deadlines.
+            </p>
+            <p>  
+            Incredibly excited to dive into new documentation involving ambiguous frameworks and experiment accordingly. I believe being open minded and gaining new perspectives through peer programming leads to a better development lifecycle. 
             </p>
           </div>
           <div className='imageContainer'>
