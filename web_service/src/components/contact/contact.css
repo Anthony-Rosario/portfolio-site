@@ -1,10 +1,11 @@
 .contactContainer{
-    padding-top: 10%;
-    width: 90vw;
-    margin: auto;
+    padding-top: 54px;
+    width: fill;
     margin-left: auto;
-    max-height: 800px;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 54px);
+    margin:0 auto;
+    justify-content: center;
+    align-content: center;
 }
 
 .formContainer{
@@ -16,20 +17,14 @@
 
 .section-Header{
     padding: 54px;
-    height: calc(22vh - 54px);
     font-size: 1.6rem;
     letter-spacing: 1px;
+    margin:0 auto;
+    margin-left: 3.2em;
     text-transform: uppercase;
     text-align: left;
     color:#86d3b9;
     font-family:Arial, Helvetica, sans-serif;
-
-}
-
-.reachOutText{
-    margin-bottom: 0;
-    color: #555;
-    font-weight: 500;
 }
 
 .hidden{

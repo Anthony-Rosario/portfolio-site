@@ -8,9 +8,10 @@
 }
 
 .projectContainer{
-  padding-top: 54px;
+  padding-top: 124px;
   position: relative;
   width: 85vw;
+  height: calc(auto - 124px);
   margin:0 auto;
 }
 
