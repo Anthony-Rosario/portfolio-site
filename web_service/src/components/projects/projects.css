@@ -9,9 +9,8 @@
 
 .projectContainer{
   padding-top: 124px;
-  position: relative;
   width: 85vw;
-  height: calc(100% - 124px);
+  height: 100%;
   margin:0 auto;
 }
 
@@ -43,10 +42,16 @@
 @media screen and (max-width:600px){
   .projectContainer{
     width:90vw;
+    height: auto;
   }
+
   .projectList{   
     margin:0 auto;
     width: 90vw;
+  }
+
+  .projectContainer {
+    padding-top: 84px;
   }
 }
 

@@ -3,6 +3,7 @@ import './TechStack.css';
 
 const Tech = forwardRef((props, ref) => {
   return (
+    <>
     <section ref={ref} className="tech-stack-container">
       <h1 className="techstack-header">Tech Stack</h1>
       <section className='tech-stack tech-border'>
@@ -12,6 +13,7 @@ const Tech = forwardRef((props, ref) => {
             <li>JavaScript</li>
             <li>HTML/CSS</li>
             <li>TypeScript</li>
+            <li>Solidity</li>
           </ul>
         </article>
         <article className='libraries-grid'>
@@ -20,7 +22,12 @@ const Tech = forwardRef((props, ref) => {
             <li>React</li>
             <li>Redux</li>
             <li>Node</li>
+            <li>Socket.io</li>
             <li>Express</li>
+            <li>Material-UI</li>
+            <li>Slack Bolt & SDK</li>
+            <li>Matter.js</li>
+            <li>p5.js</li>
           </ul>
         </article>
         <article className='devtools-grid'>
@@ -29,6 +36,10 @@ const Tech = forwardRef((props, ref) => {
             <li>Git/GitHub</li>
             <li>Heroku</li>
             <li>Postman</li>
+            <li>Netlify</li>
+            <li>pgAdmin</li>
+            <li>VS Code</li>
+            <li>Agile Methodologies</li>
           </ul>
         </article>
         <article className='database-grid'>
@@ -44,10 +55,12 @@ const Tech = forwardRef((props, ref) => {
             <li>Jest</li>
             <li>QUnit</li>
             <li>Mocha</li>
+            <li>TDD</li>
           </ul>
         </article>
       </section>
     </section>
+    </>
   );
 });
 

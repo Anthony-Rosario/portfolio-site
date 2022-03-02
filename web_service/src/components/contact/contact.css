@@ -44,9 +44,24 @@
         text-align:center;
         margin-bottom:0;
         margin: auto;
+        /* height: 4vh; */
+    }
+    .reachOutText{
+        display: none;
+    }
+
+    .section-Header{
+        padding-top: 54px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .section-Header{
+        text-align:center;
+        margin-bottom:0;
+        margin: auto;
         padding: 0%;
-        margin-top: 6em;
-        height: 4vh;
+        height: 10vh;
     }
     .reachOutText{
         display: none;

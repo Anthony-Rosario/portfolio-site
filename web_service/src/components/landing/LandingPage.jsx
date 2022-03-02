@@ -33,7 +33,7 @@ export default function LandingPage() {
         <div className='centerContent'>
           <img className='landing-img' src='./assets/headshot-min.jpg' alt="Anthony Rosario - Developer" />
           <h3 className='greeting'>Hello! My Name is</h3>
-          <h1 className='name'>Anthony Rosario.</h1>
+          <h1 className='name'>Anthony Rosario</h1>
           <h3 className='statement'>
             I am a Software Engineer based in the Bay Area, California.  
           </h3>

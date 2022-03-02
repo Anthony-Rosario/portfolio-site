@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
 
 .aboutContainer{
-  padding-top: 54px;
-  display: flex;
-  position: relative;
-  flex-direction: column;
+  padding-top: 124px;
   justify-content: center;
   height: calc(100vh - 54px);
   width: 85vw;
   margin:0 auto;
+}
+
+.sectionHeader{
+  font-size: 1.6rem;
+  height: 10%;
+  letter-spacing: 1px;
+  margin:0 auto;
+  text-transform: uppercase;
+  color:#86d3b9;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -25,7 +32,7 @@ li{
   gap:5vw;
 }
 
-.myselfImage{
+.myCatImage{
   width: 15vw;
   height: auto;
   max-width: auto;
@@ -51,8 +58,9 @@ li{
 @media screen and (max-width:768px){
   .aboutContainer{
     height: auto;
+    padding-top: 84px;
   }
-  .myselfImage{
+  .myCatImage{
     width: 40vw;
     display: block;
     margin:0 auto;
@@ -61,12 +69,40 @@ li{
     margin:0 auto;
     max-width: 90vw;
   }
+
+  .sectionHeader {
+    margin: auto;
+    height: 10vh;
+  }
 }
 
 @media screen and (max-width:725px){
   .innerContainer{
     display:flex;
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width:850px){
+  .innerContainer {
+    display:flex;
+    flex-direction: column-reverse;
+  }
+
+  .aboutContainer {
+    height: auto;
+  }
+
+  .myCatImage {
+    width: 30vw;
+    display: block;
+    margin:0 auto;
+  }
+
+  .aboutContent > p {
+    margin:0 auto;
+    max-width: 90vw;
+    font-size: 20px;
   }
 }
 

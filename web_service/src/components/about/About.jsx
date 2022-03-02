@@ -9,7 +9,7 @@ const About = forwardRef((props, ref) => {
         <div className='innerContainer'>
           <div className='aboutContent'>
             <p>  
-            Striving to build a more intuitive and accessible world of technology through collaboration and innovation. 
+            Striving to build a more intuitive and accessible world of technology through collaboration and innovation.
             </p>
             <p>  
             Coming from a background in logistics and distribution has strengthened my ability to communicate effectively in a team based environment and meet essential deadlines.
@@ -20,7 +20,7 @@ const About = forwardRef((props, ref) => {
           </div>
           <div className='imageContainer'>
             <Image 
-              className='myselfImage' src='./assets/2-eyez-gamin-min.jpg' alt="My Cat 2 Eyez" >
+              className='myCatImage' src='./assets/2-eyez-gamin-min.jpg' alt="My Cat 2 Eyez" >
               <Transformation width='700' quality='90' crop="scale"/>
             </Image>
           </div>
