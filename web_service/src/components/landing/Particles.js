@@ -5,14 +5,14 @@ import React from 'react';
 function Particle() {
   return (
     <>
-      <Particles width="100%" height="100vh" 
+      <Particles width="auto" height="auto" 
               params={{
   "particles": {
     "number": {
-      "value": 160,
+      "value": 50,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 1000
       }
     },
     "color": {
@@ -26,11 +26,6 @@ function Particle() {
       },
       "polygon": {
         "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
       }
     },
     "opacity": {
@@ -45,25 +40,12 @@ function Particle() {
     },
     "size": {
       "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 4,
-        "size_min": 0.3,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": false,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
+      "random": true
     },
     "move": {
       "enable": true,
       "speed": 1,
-      "direction": "top",
+      "direction": "random",
       "random": true,
       "straight": false,
       "out_mode": "out",
@@ -78,23 +60,13 @@ function Particle() {
   "interactivity": {
     "detect_on": "canvas",
     "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "bubble"
-      },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "repulse"
       },
       "resize": true
     },
     "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
       "bubble": {
         "distance": 250,
         "size": 0,
@@ -105,12 +77,6 @@ function Particle() {
       "repulse": {
         "distance": 400,
         "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
       }
     }
   },
