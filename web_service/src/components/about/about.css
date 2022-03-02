@@ -27,6 +27,7 @@ li{
 
 .myselfImage{
   width: 15vw;
+  height: auto;
   max-width: auto;
   border-radius: 8px;
   margin-left: auto;

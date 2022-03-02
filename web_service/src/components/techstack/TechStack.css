@@ -15,7 +15,7 @@
   padding-top: 124px;
   width: 85vw;
   margin: 0 auto;
-  height: calc(auto - 124px);
+  height: calc(100vh - 124px);
 }
 
 .tech-stack {
