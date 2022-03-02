@@ -32,7 +32,7 @@ export default function LandingPage() {
       <section
         className='landingContainer' >
         <div className='centerContent'>
-          <img className='landing-img' src='./assets/headshot.jpg' alt="Anthony Rosario - Developer" />
+          <img className='landing-img' src='./assets/headshot-min.jpg' alt="Anthony Rosario - Developer" />
           <h3 className='greeting'>Hello! My Name is</h3>
           <h1 className='name'>Anthony Rosario.</h1>
           <h3 className='statement'>

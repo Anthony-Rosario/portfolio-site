@@ -20,7 +20,7 @@ const About = forwardRef((props, ref) => {
           </div>
           <div className='imageContainer'>
             <Image 
-              className='myselfImage' src='./assets/2-eyez-gamin.jpg' alt="My Cat 2 Eyez" >
+              className='myselfImage' src='./assets/2-eyez-gamin-min.jpg' alt="My Cat 2 Eyez" >
               <Transformation width='700' quality='90' crop="scale"/>
             </Image>
           </div>
