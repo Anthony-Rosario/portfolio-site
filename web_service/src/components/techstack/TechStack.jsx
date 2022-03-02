@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import './TechStack.css';
 
 const Tech = forwardRef((props, ref) => {

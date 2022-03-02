@@ -1,4 +1,3 @@
-import React from 'react';
 import { useScroll } from '../../hooks/useScroll';
 import { BsArrowDownShort } from 'react-icons/bs'
 import About from '../about/About';
