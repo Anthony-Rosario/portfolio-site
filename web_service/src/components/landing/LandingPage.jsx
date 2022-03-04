@@ -5,8 +5,12 @@ import Header from '../header/Header';
 import Projects from '../projects/Projects';
 import Tech from '../techstack/TechStack';
 import ContactForm from '../contact/ContactForm';
-import Particle from './Particles';
+import DarkParticle from './particles/DarkParticles';
+import LightParticle from './particles/LightParticles';
+import useLocalStorage from 'use-local-storage';
 import './landing.css'
+import { Button } from '@material-ui/core';
+import { useHeaderStyles } from '../../hooks/styles';
 
 export default function LandingPage() {
   const {
@@ -19,15 +23,26 @@ export default function LandingPage() {
     techRef,
     contactRef
   } = useScroll();
+
+  const classes = useHeaderStyles();
+  const defaultTheme = window.matchMedia('(prefer-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultTheme ? 'dark' : 'light');
+  
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  }
+
   return (
-    <main>
-      <Particle />
+    <main data-theme={theme}>
+      {switchTheme ? <DarkParticle /> :  <LightParticle /> }
       <Header 
         handlePortfolioScroll={handlePortfolioScroll}
         handleAboutScroll={handleAboutScroll}
         handleTechScroll={handleTechScroll}
         handleContactScroll={handleContactScroll}
       />
+      <Button onClick={switchTheme} className={classes.bar} >Theme {theme === 'light' ? 'dark' : 'light'}</Button>
       <section
         className='landingContainer' >
         <div className='centerContent'>

@@ -1,8 +1,6 @@
 import Particles from 'react-tsparticles';
 
-import React from 'react';
-
-function Particle() {
+function DarkParticle() {
   return (
     <>
       <Particles width="auto" height="auto" 
@@ -16,7 +14,7 @@ function Particle() {
       }
     },
     "color": {
-      "value": "#636e72"
+      "value": '#000000',
     },
     "shape": {
       "type": "edge",
@@ -57,29 +55,6 @@ function Particle() {
       }
     }
   },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onclick": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "resize": true
-    },
-    "modes": {
-      "bubble": {
-        "distance": 250,
-        "size": 0,
-        "duration": 2,
-        "opacity": 0,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      }
-    }
-  },
   "retina_detect": true
 }}
       />
@@ -87,4 +62,5 @@ function Particle() {
   )
 }
 
-export default Particle;
+
+export default DarkParticle;

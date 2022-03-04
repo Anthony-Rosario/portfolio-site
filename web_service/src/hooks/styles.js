@@ -5,6 +5,7 @@ export const useHeaderStyles = makeStyles(theme =>({
         flexGrow: 1,
     },
     bar:{
+        zIndex: 1,
         justifyContent:'flex-end',
         [theme.breakpoints.down('xs')]: {
             justifyContent: 'center',
@@ -12,7 +13,7 @@ export const useHeaderStyles = makeStyles(theme =>({
         boxShadow: 'none',
         backgroundColor: '#353535',
         '& .MuiButton-root':{
-          color:'#94d2bd',
+          color: 'var(--text-primary)',
           fontWeight:'500',
         }
     },

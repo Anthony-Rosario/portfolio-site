@@ -21,6 +21,7 @@
     "react-tsparticles": "^1.39.2",
     "smoothscroll-polyfill": "^0.4.4",
     "styled-components": "^5.3.3",
+    "use-local-storage": "^2.3.6",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
