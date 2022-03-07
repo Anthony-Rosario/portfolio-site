@@ -1,8 +1,7 @@
 .contactContainer{
     padding-top: 54px;
-    width: auto;
-    margin-left: auto;
-    height: calc(100vh - 54px);
+    width: 85vw;
+    height: auto;
     margin:0 auto;
     justify-content: center;
     align-content: center;
@@ -16,14 +15,14 @@
 }
 
 .section-Header{
-    padding: 54px;
+    padding-top: 54px;
     font-size: 1.6rem;
+    height: 15vh;
     letter-spacing: 1px;
     margin:0 auto;
-    margin-left: 3.2em;
     text-transform: uppercase;
     text-align: left;
-    color:#86d3b9;
+    color:#46bd95;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -44,8 +43,8 @@
         text-align:center;
         margin-bottom:0;
         margin: auto;
-        /* height: 4vh; */
     }
+
     .reachOutText{
         display: none;
     }
@@ -63,6 +62,7 @@
         padding: 0%;
         height: 10vh;
     }
+
     .reachOutText{
         display: none;
     }

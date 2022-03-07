@@ -7,7 +7,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   justify-content: left;
-  color:#86d3b9;
+  color:#46bd95;
   font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -15,7 +15,7 @@
   padding-top: 124px;
   width: 85vw;
   margin: 0 auto;
-  height: auto;
+  height: 100vh;
 }
 
 .tech-stack {

@@ -3,7 +3,7 @@
 .aboutContainer{
   padding-top: 124px;
   justify-content: center;
-  height: calc(100vh - 54px);
+  height: calc(120vh - 54px);
   width: 85vw;
   margin:0 auto;
 }
@@ -14,7 +14,7 @@
   letter-spacing: 1px;
   margin:0 auto;
   text-transform: uppercase;
-  color:#86d3b9;
+  color:#46bd95;
   font-family:Arial, Helvetica, sans-serif;
 }
 

@@ -31,11 +31,25 @@
 }
 
 .name{
+  position: relative;
+  width: auto;
   font-size: clamp(2.4rem,8vw, 5rem);
+  justify-content: #252839;
+  -webkit-text-stroke: 0.3vh #46bd95;
   text-align: left;
-  color:#86d3b9;
+  color:#e6e5dd;
   line-height: 90%;
   margin:0.5rem 0rem 1rem 0rem;
+}
+
+.name::before{
+  content: attr(data-text);
+  position: absolute;
+  -webkit-text-stroke: 1vh #3876;
+  border-right: 2px solid #a11c1c;
+  height: 100%;
+  overflow: hidden;
+  animation: animate 3s linear;
 }
 
 .statement{
@@ -82,5 +96,15 @@
     cursor: pointer;
     position: absolute;
     margin-bottom: 3em;
+  }
+}
+
+
+@keyframes animate {
+  0%{
+    width: 0;
+  }
+  70%{
+    width: 50.9%;
   }
 }
