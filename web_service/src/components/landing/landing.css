@@ -85,40 +85,17 @@
   }
 }
 
-@media screen and (min-width:758px){
-  main {
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
 
-  .landingContainer, .name{
-    text-align: center;
+@media screen and (max-width: 400px) {
+  .landing-img{
+    margin-top: 5em;
+  }
+  
+  .landingContainer{
     height: 100%;
   }
 
-  .landing-img{
-    width: 40vw;
-    display: block;
-    margin:0 auto;
-    margin-top: 3em;
-  }
-
-  .centerContent{
-    clear:both;
-    min-width: 220px;
-    margin: auto;
-  }
-
   .chevronDiv{
-    cursor: pointer;
-    position: absolute;
-    padding-top: 100px;
-  }
-}
-
-@media screen and (min-width: 300px) {
-  .chevronDiv{
-    /* margin-top: 3rem; */
+    margin-bottom: -1rem;  
   }
 }
