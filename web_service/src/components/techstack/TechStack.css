@@ -58,6 +58,15 @@ ul {
   margin-left: 1em;
 }
 
+@media screen and (min-width:758px) {
+  .tech-stack-container{
+    height: 120vh;
+  }
+
+  .techstack-header{
+    padding-top: -100px;
+  }
+}
 
 @media screen and (max-width:720px) {
   ul {

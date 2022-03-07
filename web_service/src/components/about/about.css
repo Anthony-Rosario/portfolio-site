@@ -58,7 +58,7 @@ li{
 @media screen and (max-width:768px){
   .aboutContainer{
     height: auto;
-    padding-top: 84px;
+    padding-top: 104px;
   }
   .myCatImage{
     width: 40vw;

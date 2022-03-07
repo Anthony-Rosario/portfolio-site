@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser'
 
 const ContactForm = forwardRef((props, ref) => {
   const classes = useContactStyles();
-  const [submitted, setSubmitted] = useState('');
+  const [submitted, setSubmitted] = useState(null);
 
   const handleSubmit = (e) => {
       e.preventDefault()
